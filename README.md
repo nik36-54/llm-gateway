@@ -1,3 +1,6 @@
+# llm-gateway
+LLM Cost &amp; Reliability Governance Gateway: Production-grade gateway for LLM provider access with cost tracking, routing, and observability.
+
 # LLM Cost & Reliability Governance Gateway
 
 A production-grade backend service that sits between applications and LLM providers to enforce governance, observability, and deterministic behavior. This gateway provides cost tracking, rate limiting, provider routing, and comprehensive observability for LLM usage.
