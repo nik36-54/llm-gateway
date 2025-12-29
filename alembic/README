@@ -1,0 +1,18 @@
+Generic single-database configuration with an async dbapi.
+
+A generic Alembic environment is configured.
+
+This environment makes the following assumptions:
+
+- This is a generic single-database environment
+- Only asynchronous database drivers are used
+
+The environment is configured to run against a async DBAPI specified
+by the `sqlalchemy.url` configuration variable. For example, to use
+an async postgresql driver:
+
+    sqlalchemy.url = postgresql+asyncpg://scott:tiger@localhost/mydb
+
+The `asyncio` mode requires that the migration scripts are run using `alembic ...`
+with `--async` flag. Or set `asyncio_mode=True` in alembic.ini.
+
